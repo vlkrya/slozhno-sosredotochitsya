@@ -14,3 +14,107 @@
   --article-margin: 50px;
   --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
+
+@media (width < 768px) {
+  .header__theme-menu-list {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 290px;
+  }
+}
+
+@media (width >= 768px) {
+  :root {
+    --padding: 20px;
+    --article-margin: 80px;
+    --main-block-margin: 60px;
+    --title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header__theme-menu-list {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 890px;
+  }
+
+
+  .main__section-article:nth-child(odd) {
+    grid-template-columns: 1fr 2fr ;
+
+  }
+
+  .main__section-article:nth-child(even):not(:last-child) .main__section-inner-article {
+    grid-column: span 3;
+  }
+
+  
+	.main__image-container {
+    display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, auto);
+    
+	}
+
+  .main__image-container-item {
+    width: 100%;
+  }
+
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+	.main__image-container-item:nth-child(1) {
+		grid-column: 1 / span 2;
+		grid-row: 1 / 2;
+	}
+
+	.main__image-container-item:nth-child(2) {
+		grid-column: 3 / 4;
+		grid-row: 1 / span 2;
+	}
+
+	.main__image-container-item:nth-child(3) {
+		grid-column: 1 / 2;
+		grid-row: 2 / span 2;
+	}
+
+	.main__image-container-item:nth-child(5) {
+		grid-column: 2 / span 2;
+		grid-row: 3 / 4;
+	}
+
+  .header__theme-menu-list {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (width >= 1024px) {
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+
+  .main__section-article:nth-child(odd) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .main__section-article:nth-child(odd) > .main__inner-article {
+    grid-column: 2 / span 2;
+  }
+
+  .main__section-article:nth-child(even):not(:last-child) .main__inner-article {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

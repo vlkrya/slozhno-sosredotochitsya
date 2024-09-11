@@ -23,14 +23,28 @@
 
 }
 
-.header__theme-menu {
-
+.header__theme-dark-decor {
+  display: inline-block;
+  position: absolute;
+  top: var(--padding);
+  right: 0;
+  text-transform: uppercase;
+  line-height: 25px;
 }
 
-.header__theme-menu-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.header__theme-dark-decor::after {
+  content: '';
+  display: inline-block;
+  margin-inline-end: 9px;
+  margin-inline-start: 10px;
+  inline-size: 9px;
+  block-size: 9px;
+  border-radius: 50%;
+  background-color: currentColor;
+  box-shadow: 0 0 4px currentColor;
+} 
+
+.header__theme-menu {
 
 }
 
