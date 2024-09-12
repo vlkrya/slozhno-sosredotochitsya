@@ -17,14 +17,10 @@
 
 	color: var(--accent-color);
 }
-
-.theme_dark .header__theme-dark-decor {
-	display: inline-block;
-}
-
+/* 
 .theme_dark .title-decoration {
 	--text-color: var(--background-color);
-}
+} */
 
 .theme_dark .title {
 	color: rgb(219, 0, 255);
