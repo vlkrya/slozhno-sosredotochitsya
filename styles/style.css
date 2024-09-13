@@ -5,6 +5,7 @@
   margin: 0 auto;
   padding: 10px;
   color: var(--text-color);
+  color: var(--title-color);
   font-size: 18px;
   background-image: var(--background-image);
   background-repeat: no-repeat;
@@ -12,6 +13,9 @@
   background-size: cover;
   background-attachment: fixed;
   max-width: 1024px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  
 }
 
 .header {
@@ -228,6 +232,11 @@
   list-style: none;
 }
 
+.main__section-title,
+.main__section-title-second {
+  color: var(--section-title-color, inherit);
+}
+
 @media (min-width: 768px) {
   .main__section-article {
     display: grid;
@@ -373,5 +382,5 @@
 
 .link {
   text-decoration: none;
-  text-shadow: 2px 2px 0 #F1B2CE;
+  text-shadow: 2px 2px 0 var(--link-color);
 }
