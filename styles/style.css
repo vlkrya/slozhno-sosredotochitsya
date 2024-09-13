@@ -212,6 +212,7 @@
 .accent-text {
   font-size: 18px;
   line-height: 130%;
+  font-weight: bold;
 }
 
 .accent-text_bold {
@@ -256,7 +257,6 @@
 
 .main__section-title {
   font-size: inherit;
-  font-weight: var(--font-weight);
 }
 
 .main__section-title-second {
