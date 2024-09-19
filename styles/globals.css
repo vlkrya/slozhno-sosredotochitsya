@@ -1,3 +1,4 @@
+/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
 
 *,
 *::before,
@@ -8,11 +9,13 @@
 body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
-  margin: 0 auto;
-  background-color: #000028;
-  font-family: IBM Plex Mono;
-  margin-left: 12px;
-  margin-right: 12px;
+  margin: 0 auto; 
+  padding: 0;
+  font-family: 'IBM Plex mono', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px; 
 }
 
 h1,
@@ -40,9 +43,8 @@ button,
 a {
   color: currentColor;
   font-family: inherit;
+  font-weight: inherit;
   font-size: inherit;
   line-height: inherit;
+  text-decoration: none;
 }
-
-
-

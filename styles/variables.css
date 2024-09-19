@@ -1,50 +1,16 @@
-:root {
+/*
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
 
-  --main-font: "IBM Plex Mono", monospace;
-  --text-bold: 700;
-  --gap: 20px;
+:root {
+  --background-color: rgb(0,0,40);
+  --accent-color: rgb(255,0,112);
+  --accent-color-rgb: rgb(255,0,112);   /* Основной акцентный цвет */
+  --text-color: rgb(241,178,206);   /* Цвет основного текста */
   --padding: 10px;
   --main-block-margin: 40px;
-  --article-margin: 50px;
-  
-
-  --title-font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --title-font-size-desktop: clamp(7.2rem, 0.5625rem + 14.4531vw, 9.8125rem);
-  
-
-  --background-color: #000028;
-  --text-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --title-color: #DB00FF;
-  --decorative-bracket-color: #FF0070;
-  --button-hover-color: #FF0070;
-  --nav-color: #FF0070;
-  --section-title-color: #FF0070;
   --background-image: url(../images/cover-image-dark.png);
-
-  --light-background-color: #FFF1F7;
-  --light-text-color: #353430;
-  --light-accent-color: #FF8DCB;
-  --light-title-color: #FFC2E6;
-  --light-title-shadow-color: #FF8DCB;
-  --light-decorative-bracket-color: #353430;
-  --light-button-hover-color: #353430;
-  --light-nav-color: #353430;
-  --light-section-title-color: #353430;
-  --light-background-image: url(../images/cover-image-light.png);
+  --article-margin: 50px;
+  --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --background-color: var(--light-background-color);
-    --text-color: var(--light-text-color);
-    --accent-color: var(--light-accent-color);
-    --title-color: var(--light-title-color);
-    --decorative-bracket-color: var(--light-decorative-bracket-color);
-    --button-hover-color: var(--light-button-hover-color);
-    --nav-color: var(--light-nav-color);
-    --section-title-color: var(--light-section-title-color);
-    --background-image: var(--light-background-image);
-  }
-}
-

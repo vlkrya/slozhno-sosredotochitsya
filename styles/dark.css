@@ -5,62 +5,26 @@
 */
 
 .page.theme_dark {
-
+	/* сохраните этот селектор в приведённом виде.
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
 	--background-color: rgb(0, 0, 40);
-	--accent-color: rgb(255, 0, 112); /* text color */ 
-	--accent-color-rgb: 255, 0, 112;
-	--text-color: #F1B2CE;
-	--title-color: #DB00FF;
-	--decorative-bracket-color: #FF0070;
-	-button-hover-color: #ff0070;
-	--nav-color: #ff0070;
+	--accent-color: rgb(255, 0, 112);  /* Основной акцентный цвет */
+	--text-color: rgb(241, 178, 206); /* Цвет основного текста */
 	--background-image: url(../images/cover-image-dark.png);
-	--header-color: #FF0070;
-	--section-title-color: #FF0070;
 
-	color: var(--text-color);
+	color: var(--accent-color);
 }
 
-.theme_dark .main__title-decoration {
-	color: var(--title-color);
-	text-shadow: 4px 4px 0 var(--accent-color);
-  }
-  
+.theme_dark .header__theme-dark-decor {
+	display: inline-block;
+}
 
-  .theme_dark .accent-background {
-	background-color: var(--accent-color);
-	color: var(--background-color); 
-  }
-  
-
-  .theme_dark .header__theme-menu-button {
-	color: var(--accent-color);
-  }
-  
-  .theme_dark .header__theme-menu-button:hover,
-  .theme_dark .header__theme-menu-button:focus {
-	outline-color: var(--accent-color);
-  }
-  
-
-  .theme_dark .header__theme-dark-decor {
-	color: var(--accent-color);
-  }
-  
-  .theme_dark .header__theme-dark-decor::after {
-	background-color: var(--accent-color);
-	box-shadow: 0 0 5px 4px var(--accent-color);
-  }
+.theme_dark .title-decoration {
+	--text-color: var(--background-color);
+}
 
 .theme_dark .title {
 	color: rgb(219, 0, 255);
-}
-
-.theme_dark .main__section-title,
-.theme_dark .main__section-title-second {
-  color: var(--section-title-color);
-}
-
-.link { 
-	--link-color: #FF0070;
 }

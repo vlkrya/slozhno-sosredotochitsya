@@ -9,49 +9,57 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  --background-color: #FFF1F7;
-  --text-color: #353430;
-  --accent-color: #FF8DCB; 
-  --title-color: #FFC2E6;
-  --title-shadow-color: #FF8DCB;
-  --background-image: url(../images/cover-image-light.png);
-  --section-title-color: #353430;
+	--background-color: rgb(255, 241, 247);
+	--accent-color: rgb(255, 141, 203);  /* Основной акцентный цвет */
+	--text-color: rgb(53, 52, 48); /* Цвет основного текста */
+	--background-image: url(../images/cover-image-light.png);
 
-  
-
-  --decorative-bracket-color: #353430;
-  --button-hover-color: #353430;
-  --nav-color: #353430;
-	
-}
-
-.theme_light .accent-background {
-	color: #353430;
-  }
-  
-
-.theme_light .main__title-decoration {
-	color: var(--title-color);
-  }
-
-.link { 
-	--link-color: #FF8DCB;
-
+	color: var(--text-color);
 }
 
 .theme_light .header__theme-dark-decor {
 	display: none;
+}
+
+.theme_light .title-decoration {
+	--text-color: var(--text-color);
+}
+
+.theme_light .title {
+	color: rgb(255, 194, 230);
+}
+
+@media (width >= 1024px) {
+  .title {
+    text-shadow: 4px 4px 0 rgb(255, 0, 112);
   }
+}
 
 @media (prefers-color-scheme: light) {
-	:root {
+	.page {
+		--background-color: rgb(255, 241, 247);
+		--accent-color: rgb(255, 141, 203);
+		--text-color: rgb(53, 52, 48); 
 		--background-image: url(../images/cover-image-light.png);
-		--accent-color: #ff8dcb;
-		--heading-color: #353430;
-		--text-colot: #353430;
-		--button-hover-color: #353430; 
-		--decotative-bracket-color: #353430;
-		--menu-color: #353430;
-	
+
+		color: var(--text-color);
 	}
+
+	.header__theme-dark-decor {
+		display: none;
+	}
+
+	.title-decoration {
+		--text-color: var(--text-color);
+	}
+
+	.title {
+		color: rgb(255, 194, 230);
+	}
+
+  @media (width >= 1024px) {
+  .title {
+    text-shadow: 4px 4px 0 rgb(255, 0, 112);
+  }
+}
 }
