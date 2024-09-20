@@ -12,6 +12,7 @@
 	--background-color: rgb(255, 241, 247);
 	--accent-color: rgb(255, 141, 203);  /* Основной акцентный цвет */
 	--text-color: rgb(53, 52, 48); /* Цвет основного текста */
+	--title-color: rgb(255, 194, 230);
 	--background-image: url(../images/cover-image-light.png);
 
 	color: var(--text-color);
@@ -25,9 +26,6 @@
 	--text-color: var(--text-color);
 }
 
-.theme_light .title {
-	color: rgb(255, 194, 230);
-}
 
 @media (width >= 1024px) {
   .title {
@@ -40,9 +38,10 @@
 		--background-color: rgb(255, 241, 247);
 		--accent-color: rgb(255, 141, 203);
 		--text-color: rgb(53, 52, 48); 
+		--title-color: rgb(255, 194, 230); 
 		--background-image: url(../images/cover-image-light.png);
 
-		color: var(--text-color);
+		
 	}
 
 	.header__theme-dark-decor {
@@ -53,13 +52,4 @@
 		--text-color: var(--text-color);
 	}
 
-	.title {
-		color: rgb(255, 194, 230);
-	}
-
-  @media (width >= 1024px) {
-  .title {
-    text-shadow: 4px 4px 0 rgb(255, 0, 112);
-  }
-}
 }

@@ -91,8 +91,8 @@
 }
 
 .header__theme-menu-button:hover {
-	border: 1px solid rgba(var(--accent-color), 0.4);
-}
+	border: 1px solid rgba(var(--accent-color-rgb), 0.4);
+  }
 
 .header__theme-menu-button:focus {
 	outline: none;
@@ -110,7 +110,7 @@
 
 .title {
 	justify-self: start;
-	color: rgb(219, 0, 255);
+	color: var(--title-color);
 	font-size: var(--title-font-size);
 	font-weight: 700;
 	line-height: 82.5%; 
