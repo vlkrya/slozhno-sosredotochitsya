@@ -114,6 +114,7 @@
 	font-size: var(--title-font-size);
 	font-weight: 700;
 	line-height: 82.5%; 
+	text-shadow: 4px 4px 0 var(--title-shadow-color);
 }
 
 .header__title {
