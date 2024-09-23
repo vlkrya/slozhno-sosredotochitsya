@@ -15,6 +15,7 @@
 	--title-color: rgb(255, 194, 230);
 	--background-image: url(../images/cover-image-light.png);
 	--title-shadow-color: #FF8DCB; 
+	--main-title: #353430; 
   
 	color: var(--text-color);
   }
@@ -28,7 +29,7 @@
   }
   
   .theme_light .header__theme-menu-button:hover { 
-	border: 1px solid #353430;
+	border: 1px solid rgba(50, 49, 45, 0.40);
   }
   
   @media (prefers-color-scheme: light) {
