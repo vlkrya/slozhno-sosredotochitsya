@@ -1,5 +1,3 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
 	/* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 	background-color: var(--background-color);
@@ -11,10 +9,10 @@
 	min-height: 100dvh;
 	color: var(--text-color); 
 	color: var(--main-title); 
-  }
+}
 
 .container {
-  padding-inline: var(--padding);
+	padding-inline: var(--padding);
 }
 
 .decorated-zone {
@@ -50,7 +48,7 @@
 	grid-template-rows: 1fr auto 1fr;
 	align-items: center;
 	justify-items: end;
-  min-block-size: 668px;
+	min-block-size: 668px;
 }
 
 .header__theme-dark-decor {
@@ -60,6 +58,7 @@
 	right: 0;
 	text-transform: uppercase;
 	line-height: 25px; 
+	color: var(--main-title-color); 
 }
 
 .header__theme-dark-decor::after {
@@ -89,25 +88,22 @@
 	text-transform: lowercase;
 	line-height: 18px; 
 	cursor: pointer;
-	color: var(--accent-color);
+	color: var(--nav-color);
 }
 
 .header__theme-menu-button:hover {
-	border: 1px solid rgba(var(--accent-color-rgb), 0.4);
-  }
+	border: 1px solid var(--nav-hover-color);
+}
 
 .header__theme-menu-button:focus {
 	outline: none;
-}
-
-.header__theme-menu-button:focus-visible {
-	outline: none;
-	border-block-end: 1px solid currentColor;
+	border: none;
+	border-bottom: 1px solid var(--nav-color);
 }
 
 .header__theme-menu-button_active {
 	pointer-events: none;
-	border: 1px solid currentColor;
+	border: 1px solid var(--nav-color);
 }
 
 .title {
@@ -132,10 +128,8 @@
 	line-height: inherit;
 	color: var(--text-color);
 	background-color: var(--accent-color);
-}
 
-.header__title-decoration {
-	inline-size: max(355px, 50%);
+	
 }
 
 .main {
@@ -151,8 +145,8 @@
 .main__title {
 	font-size: inherit;
 	font-weight: 700;
-	color: var(--main-title); 
-  }
+	color: var(--main-title-color); 
+}
 
 .main__inner-article {
 	display: grid;
@@ -201,7 +195,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  min-block-size: 668px;
+	min-block-size: 668px;
 }
 
 .footer__title {
@@ -216,9 +210,9 @@
 		--title-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 	}
 
-  .title {
-    margin-inline-start: -20px;
-  }
+	.title {
+		margin-inline-start: -20px;
+	}
 
 	.main__section-article:nth-child(odd) {
 		grid-template-columns: 1fr 2fr;
@@ -262,6 +256,11 @@
 		block-size: 100%;
 		object-fit: cover;
 	}
+
+	.header__title-decoration {
+		width: 364px;
+	}
+
 }
 
 @media (width >= 1024px) {
@@ -285,4 +284,9 @@
 	.main__section-article:nth-child(even):not(:last-child) .main__inner-article {
 		grid-template-columns: repeat(3, 1fr);
 	}
+
+	.header__title-decoration {
+		width: 491px;
+	}
+
 }
