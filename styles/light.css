@@ -15,7 +15,7 @@
 	--nav-hover-color: rgba(50, 49, 45, 0.40); /* Цвет бордера при ховере */
 	--main-title-color: #353430; /* Цвет заголовка main__title */
 
-	color: var(--text-color);
+
 }
 
 .theme_light .header__theme-dark-decor {
