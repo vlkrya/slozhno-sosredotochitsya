@@ -93,13 +93,13 @@
 }
 
 .header__theme-menu-button:hover {
-	border: 1px solid var(--nav-hover-color);
+    outline: 1px solid rgb(from var(--nav-color) r g b / 40%);
 }
 
 .header__theme-menu-button:focus {
 	outline: none;
 	border: none;
-	border-bottom: 1px solid var(--nav-color);
+	border-bottom: 1px solid var(--nav--color);
 }
 
 .header__theme-menu-button_active {
