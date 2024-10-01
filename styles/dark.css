@@ -1,28 +1,31 @@
+/*
+  Специально для тёмной темы при наличии класса,
+  здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
 .page.theme_dark {
 	/* сохраните этот селектор в приведённом виде.
-	   Так стили написанные ниже будут иметь больший вес,
-	   чем стили в медиазапросе предпочтений пользователя
-	*/
-	--background-color: rgb(0,0,40);
-	--accent-color: rgb(255,0,112);
-	--text-color: rgb(241,178,206);
-	--title-color: rgb(219, 0, 255);
+    Так стили написанные ниже будут иметь больший вес,
+    чем стили в медиазапросе предпочтений пользователя
+  */
+	--background-color: rgb(0, 0, 40);
+	--accent-color: rgb(255, 0, 112);
+	--accent-color-rgb: 255, 0, 112;
+	--text-color: rgb(241, 178, 206);
 	--background-image: url(../images/cover-image-dark.png);
-	--title-shadow-color: var(--accent-color);
-	--border-color: rgba(50, 49, 45, 0.40); /* Переопределение переменной для обводки */
-	--nav-color: rgb(255,0,112); /* Цвет кнопок и бордера */
-	--nav-hover-color: rgb(255, 0, 112, 0.4) /* Цвет бордера при hover */
-	--main-title-color: #FF0070; /* Цвет заголовка main__title */
-	--theme-decor-color: #FF0070;
 
-	
+	color: var(--accent-color);
 }
 
 .theme_dark .header__theme-dark-decor {
 	display: inline-block;
-	color: #FF0070; /* Цвет для темной темы */
 }
 
 .theme_dark .title-decoration {
 	--text-color: var(--background-color);
+}
+
+.theme_dark .title {
+	color: rgb(219, 0, 255);
 }

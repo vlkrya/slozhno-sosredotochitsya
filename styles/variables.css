@@ -1,20 +1,12 @@
 :root {
   --background-color: rgb(0,0,40);
   --accent-color: rgb(255,0,112);
-  --accent-color-rgb: 255, 0, 112;   /* Основной акцентный цвет */
-  --text-color: rgb(241,178,206);   /* Цвет основного текста */
+  --accent-color-rgb: 255,0,112;
+  --text-color: rgb(241,178,206);
   --padding: 10px;
-  --title-color: rgb(219, 0, 255);
   --main-block-margin: 40px;
   --background-image: url(../images/cover-image-dark.png);
   --article-margin: 50px;
   --title-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  --title-shadow-color: var(--accent-color);
-  --border-color: rgba(50, 49, 45, 0.40); /* Переменная для обводки */
-  --nav-color: var(--accent-color); /* Цвет кнопок и бордера */
-  --nav-hover-color: rgba(50, 49, 45, 0.40); /* Цвет бордера при hover */
-  --main-title-color: var(--accent-color); /* Цвет заголовка main__title */
-  --theme-decor-color: #FF0070;
-  
   
 }
