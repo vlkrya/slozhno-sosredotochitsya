@@ -14,8 +14,7 @@
 	--accent-color-rgb: 53, 52, 48;
 	--text-color: rgb(53, 52, 48);
 	--background-image: url(../images/cover-image-light.png);
-
-	color: var(--text-color);
+	--color-decoration-elements: rgb(53, 52, 48);
 
 }
 
